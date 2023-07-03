@@ -1,3 +1,5 @@
+/* Author Akeem Hertenstein, Assignment CIS 130; Responsive Travel */
+
 * {
     margin: 0
 }
@@ -5,10 +7,10 @@
 /* Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Fasthand&family=Jim+Nightshade&display=swap');
 
-
+/* Header */
 
 h1 {
-    background: peachpuff url(images/R.jpg);
+    background: rgb(182, 90, 9) url(images/R.jpg);
     background-repeat: no-repeat;
     background-size: 100%;
     background-position: center;
@@ -25,6 +27,9 @@ h1 {
     box-shadow: 0 10px 5px -5px;
 
 }
+
+
+/* Body Style */
 
 .intro {
     font-size: 2rem;
@@ -47,6 +52,9 @@ footer {
     margin: auto;
     background: peachpuff;
     position: relative;
+    padding-top: 2%;
+    columns: 1;
+    text-align: center;
 
 }
 
@@ -55,6 +63,7 @@ article {
     border-radius: 25px 25px 25px 25px;
     padding-top: 5%;
     padding-bottom: 5%;
+    margin-right: 3%;
 
 }
 
@@ -96,18 +105,7 @@ strong {
     color: rgb(141, 9, 35);
 }
 
-footer {
-    padding: 2%;
-    columns: 1;
-    text-align: center;
-
-}
-
-.footlink {
-    text-align: left;
-}
-
-
+/* Screen Formatting */
 @media screen and (min-width: 700px) {
 
     .container,
@@ -153,30 +151,27 @@ footer {
     }
 
     .side1 {
-        display: inline-block;
-        position: absolute;
         top: 40%;
-        left: 50%;
-        background-color: rgba(12, 99, 180, 0.682);
-        box-shadow: -5px -5px 20px ivory;
-        color: blanchedalmond;
+        left: 45%;
+        box-shadow: -5px -5px 20px ivory;  
+    }
+    .sideblock{
+        display: inline-block;
+        width: 30%;
+         color: blanchedalmond;
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         border-radius: 15px 15px;
+        background-color: rgba(12, 99, 180, 0.682);
+        position: absolute;
+        padding: 3%;
     }
+    
 
     .side2 {
-        display: inline-block;
-        background-color: rgba(12, 99, 180, 0.682);
-        width: 30%;
-        position: absolute;
         bottom: 10%;
         margin-left: 10%;
-        padding: 5%;
         font-size: 1.2rem;
-        color: blanchedalmond;
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        box-shadow: 5px 5px 20px;
-        border-radius: 15px 15px;
+        box-shadow: 5px 5px 20px; 
     }
 
     .maincontent {
